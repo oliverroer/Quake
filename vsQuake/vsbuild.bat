@@ -2,6 +2,8 @@
 setlocal
 cd /D "%~dp0"
 
+set id1="C:\Program Files (x86)\Steam\steamapps\common\Quake\id1"
+
 call .\vsclean.bat
 
 mkdir bin
@@ -56,4 +58,4 @@ call cl ^
 
 move .\bin\sys_win.exe .\bin\quake.exe
 
-xcopy /s /i "C:\Program Files (x86)\Steam\steamapps\common\Quake\id1" ".\bin\id1"
+xcopy /s /i %id1% ".\bin\id1"
