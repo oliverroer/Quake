@@ -20,14 +20,14 @@ I opted for the name `lasterr`.
 
 ## Always set `id386` to `0`
 
-Lines 64 to 68 in `quakedef.h` contains the following pre-processor directive:
+Lines 64 to 68 in `quakedef.h` contain the following pre-processor directive:
 ```c
 #if defined __i386__ // && !defined __sun__
 #define id386	1
 #else
 #define id386	0
 #endif
-`` 
+```
 
 Line 65 has be change, such that it now looks as follows:
 ```c
