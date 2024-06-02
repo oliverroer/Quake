@@ -1,0 +1,1 @@
+raddbg .\bin\main.exe
