@@ -270,8 +270,6 @@ void Sys_MakeCodeWriteable (unsigned long startaddr, unsigned long length)
 }
 
 
-#ifndef _M_IX86
-
 void Sys_SetFPCW (void)
 {
 }
@@ -287,8 +285,6 @@ void Sys_PopFPCW (void)
 void MaskExceptions (void)
 {
 }
-
-#endif
 
 /*
 ================
@@ -687,7 +683,6 @@ int			global_nCmdShow;
 char		*argv[MAX_NUM_ARGVS];
 static char	*empty_string = "";
 HWND		hwnd_dialog;
-
 
 int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
