@@ -2,7 +2,7 @@
 
 This file outlines some of the modifications that have been made to the original source code, in order to make it build with the build tooling at the time.
 
-## Change `error` to `lasterr`
+## Change `errno` to `lasterr`
 
 In `net_wins.c` nad `net_winpx.c` occurrences of `errno` had to be renamed to get rid of the following build errors:
 
